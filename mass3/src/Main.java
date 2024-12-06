@@ -1,9 +1,20 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
-//        1) Найдите и выведите количество положительных и отрицательных чисел в массиве.
-
+    public static void main(String[] args) {System.out.println();
+//        1) Найдите и выведите количество положительных и отрицательных чисел в массив
+int[]arr = {11,-1,22,-55,99,31,-7,27};
+int positive count = 0;
+int negative count =0;
+for (int i =0; i<arr.length;i++){
+    if (arr [i]>0){
+        positive count++;
+    } else if (arr[i]<0) {
+        negative count++;
+        System.out.println("Kolichestvo positive count" +positive count);
+        System.out.println("Kolichestvo negative count" +negative count);
+    }
+}
 
 
 
